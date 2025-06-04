@@ -1,0 +1,32 @@
+{
+  "image_path": "data/20250604220023_1.jpg",
+  "image_dimensions": [
+    1080,
+    1920,
+    3
+  ],
+  "grid_rect": {
+    "x": 427,
+    "y": 45,
+    "width": 1068,
+    "height": 990
+  },
+  "grid_coordinates": {
+    "top_left": [
+      427,
+      45
+    ],
+    "top_right": [
+      1495,
+      45
+    ],
+    "bottom_left": [
+      427,
+      1035
+    ],
+    "bottom_right": [
+      1495,
+      1035
+    ]
+  }
+}
