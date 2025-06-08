@@ -1,0 +1,35 @@
+{
+  "image_dimensions": [
+    1920,
+    1080
+  ],
+  "corner_points": [
+    [
+      429,
+      45
+    ],
+    [
+      1493,
+      47
+    ],
+    [
+      1497,
+      1034
+    ],
+    [
+      428,
+      1032
+    ]
+  ],
+  "grid_config": {
+    "grid_x1": 429,
+    "grid_y1": 45,
+    "grid_x2": 1493,
+    "grid_y2": 1034,
+    "h_spacing": 0,
+    "v_spacing": 0,
+    "cell_width": 266,
+    "cell_height": 247
+  },
+  "calibration_code": "# Configuration g\u00e9n\u00e9r\u00e9e par le calibrateur interactif\ndef get_calibrated_cell_coordinates(row: int, col: int, width: int, height: int):\n    \"\"\"Coordonn\u00e9es calibr\u00e9es interactivement\"\"\"\n    \n    # Zone de la grille (ratios calibr\u00e9s)\n    grid_x1 = int(width * 0.223438)\n    grid_x2 = int(width * 0.777604)\n    grid_y1 = int(height * 0.041667)\n    grid_y2 = int(height * 0.957407)\n    \n    # Espacement calibr\u00e9\n    total_width = grid_x2 - grid_x1\n    total_height = grid_y2 - grid_y1\n    \n    h_spacing = int(total_width * 0.000000)\n    v_spacing = int(total_height * 0.000000)\n    \n    # Dimensions des cellules\n    cell_width = (total_width - 3 * h_spacing) // 4\n    cell_height = (total_height - 3 * v_spacing) // 4\n    \n    # Position de la cellule\n    cell_x1 = grid_x1 + col * (cell_width + h_spacing)\n    cell_y1 = grid_y1 + row * (cell_height + v_spacing)\n    cell_x2 = cell_x1 + cell_width\n    cell_y2 = cell_y1 + cell_height\n    \n    return cell_x1, cell_y1, cell_x2, cell_y2\n\n# Valeurs absolues pour image 1920x1080:\n# Zone grille: (429, 45) -> (1493, 1034)\n# Espacement: H=0, V=0\n# Cellules: 266x247"
+}

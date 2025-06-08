@@ -1,0 +1,79 @@
+{
+  "hero_final_status": {
+    "hero_info": {
+      "description": "Héros Modulaire (paladin) + Armure standard (-3 dégâts) + Régénération natural",
+      "special_abilities": [
+        "Régénération natural (+5 soins)"
+      ],
+      "level": 1,
+      "experience": "0/100"
+    },
+    "stats": {
+      "health": "110/110",
+      "mana": "60/60",
+      "attack": 10,
+      "defense": 7,
+      "gold": 105
+    },
+    "inventory": {
+      "items": [
+        "Potion de vie",
+        "Potion de vie"
+      ],
+      "item_count": 2
+    },
+    "combat_stats": {
+      "battles_won": 0,
+      "damage_dealt": 0,
+      "damage_taken": 0,
+      "healing_received": 0,
+      "spells_cast": 0
+    },
+    "condition": "Parfaite santé",
+    "efficiency_metrics": {}
+  },
+  "game_statistics": {
+    "total_moves": 4,
+    "total_interactions": 4,
+    "damage_taken": 1,
+    "gold_earned": 105,
+    "items_collected": 2,
+    "healing_received": -10,
+    "traps_triggered": 0,
+    "monsters_defeated": 1,
+    "treasures_opened": 2
+  },
+  "events_summary": {
+    "total_events": 12,
+    "event_types": {
+      "hero_moved": 4,
+      "object_interaction": 4,
+      "stats_changed": 4
+    },
+    "first_event": "2025-06-05T15:18:16.407090",
+    "last_event": "2025-06-05T15:18:16.407289"
+  },
+  "command_history": {
+    "total_commands": 8,
+    "command_types": {
+      "MoveCommand": 4,
+      "InteractCommand": 4
+    },
+    "can_undo": true
+  },
+  "hero_selection_history": [
+    {
+      "hero_class": "paladin",
+      "custom_name": "Héros Modulaire",
+      "timestamp": "2025-06-05T15:18:16.406506"
+    },
+    {
+      "enhancement": "super_regen",
+      "before": "Héros Modulaire (paladin) + Armure standard (-3 dégâts) + Régénération natural",
+      "after": "Héros Modulaire (paladin) + Armure standard (-3 dégâts) + Régénération natural + Régénération divine",
+      "timestamp": "2025-06-05T15:18:16.406574"
+    }
+  ],
+  "grid_objects_remaining": 12,
+  "timestamp": "2025-06-05T15:18:16.407289"
+}
